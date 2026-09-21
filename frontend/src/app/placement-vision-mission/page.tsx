@@ -1,4 +1,5 @@
 "use client";
+import Marquee from "@/components/Marquee";
 
 import Link from "next/link";
 import DayOrderBar from "../../components/DayOrderBar";

@@ -117,7 +117,7 @@ export default function PlacementMOUPage() {
           Latest Announcements
         </div>
         <div className="overflow-hidden flex-1 py-2 bg-white text-blue-600 font-semibold italic text-sm">
-          <marquee scrollamount="5">
+          <Marquee scrollamount="5">
             <span className="mr-8">First Year PG classes commence on 16-07-2026 (Thursday).</span>
             <span className="text-red-600 px-2 font-bold border border-red-600 rounded mr-2 text-xs">NEW</span>
             <a href="https://admission.aditanarcollege.com/" target="_blank" rel="noopener noreferrer" className="mr-8 text-blue-500 underline cursor-pointer">
@@ -128,7 +128,7 @@ export default function PlacementMOUPage() {
             <a href="/Placement_Training_Schedule_2021-2022.pdf" target="_blank" rel="noopener noreferrer" className="mr-8 text-blue-500 underline cursor-pointer">
               Placement Training Schedule
             </a>
-          </marquee>
+          </Marquee>
         </div>
       </div>
 

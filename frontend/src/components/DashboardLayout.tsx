@@ -16,7 +16,7 @@ interface SidebarItem {
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
-  role: 'student' | 'recruiter' | 'admin';
+  role: 'student' | 'recruiter' | 'admin' | 'Placement Officer' | 'staff';
   userName: string;
 }
 

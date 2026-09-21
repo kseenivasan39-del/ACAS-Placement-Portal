@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #0F3A70;   /* Deep Institutional Navy */
+  --color-brand-secondary: #0A264B; /* Darker Navy */
+  --color-brand-accent: #E8A810;    /* Muted Gold Accent */
+  
+  --color-background-light: #F4F6F8;
+  --color-background-dark: #0F172A;
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark: #1E293B;
+  
+  --color-text-light: #1E293B;
+  --color-text-dark: #F8FAFC;
+  
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-danger: #DC2626;
+}
+
+@layer base {
+  :root {
+    --background: var(--color-background-light);
+    --foreground: var(--color-text-light);
+    --surface: var(--color-surface-light);
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: var(--color-background-dark);
+      --foreground: var(--color-text-dark);
+      --surface: var(--color-surface-dark);
+    }
+  }
+  
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer utilities {
+  .card-solid {
+    @apply bg-white dark:bg-[#1E293B] shadow-sm border border-slate-200 dark:border-slate-800 rounded-lg;
+  }
+  .btn-primary {
+    @apply bg-[var(--color-brand-primary)] text-white hover:bg-[var(--color-brand-secondary)] px-6 py-2 rounded font-medium transition-colors;
+  }
+  .btn-outline {
+    @apply border border-[var(--color-brand-primary)] text-[var(--color-brand-primary)] hover:bg-slate-50 dark:hover:bg-slate-800 px-6 py-2 rounded font-medium transition-colors;
+  }
+  .heading-primary {
+    @apply text-[#293d6b] font-bold tracking-tight;
+    font-family: 'Georgia', 'Times New Roman', serif;
+  }
+}

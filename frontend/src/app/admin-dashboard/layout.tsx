@@ -16,9 +16,8 @@ export default function AdminLayout({
 
   return (
     <DashboardLayout 
-      role="Placement Officer" 
-      userName="Rakesh Jha" 
-      links={adminLinks}
+      role="admin" 
+      userName="Rakesh Jha"
     >
       {children}
     </DashboardLayout>

@@ -18,8 +18,7 @@ export default function RecruiterLayout({
   return (
     <DashboardLayout 
       role="recruiter" 
-      userName="Google HR" 
-      links={recruiterLinks}
+      userName="Google HR"
     >
       {children}
     </DashboardLayout>
